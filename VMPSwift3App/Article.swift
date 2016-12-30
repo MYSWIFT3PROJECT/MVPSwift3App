@@ -19,7 +19,7 @@ class Article {
         self.description = ""
         self.image = ""
     }
-    init(jsonArticle:JSON) {
+    init(jsonArticle: JSON) {
         self.id = jsonArticle["ID"].int
         self.title = jsonArticle["TITLE"].string
         self.description = jsonArticle["DESCRIPTION"].string

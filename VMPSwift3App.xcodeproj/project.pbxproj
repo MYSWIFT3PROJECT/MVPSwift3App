@@ -18,6 +18,7 @@
 		0CECD4741E1554B8007F9C94 /* ArticleProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CECD4731E1554B8007F9C94 /* ArticleProtocal.swift */; };
 		0CECD4761E155DF6007F9C94 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CECD4751E155DF6007F9C94 /* Pagination.swift */; };
 		1E954018B200E00C9D7F6ACA /* Pods_VMPSwift3App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE11A103C2000B9314819C0 /* Pods_VMPSwift3App.framework */; };
+		8843D5F91E15FACE0083999B /* ArticlePresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843D5F81E15FACE0083999B /* ArticlePresentor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		0CECD4751E155DF6007F9C94 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		186441F8EB4EC616159A8A5F /* Pods-VMPSwift3App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMPSwift3App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VMPSwift3App/Pods-VMPSwift3App.debug.xcconfig"; sourceTree = "<group>"; };
 		7EE11A103C2000B9314819C0 /* Pods_VMPSwift3App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VMPSwift3App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8843D5F81E15FACE0083999B /* ArticlePresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlePresentor.swift; sourceTree = "<group>"; };
 		A46950D9CB2C80F2E8DD77B9 /* Pods-VMPSwift3App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMPSwift3App.release.xcconfig"; path = "Pods/Target Support Files/Pods-VMPSwift3App/Pods-VMPSwift3App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 		0CECD4531E1547B5007F9C94 /* VMPSwift3App */ = {
 			isa = PBXGroup;
 			children = (
+				8843D5F71E15FAB40083999B /* Presentor */,
 				0CECD4701E155403007F9C94 /* Service */,
 				0CECD46D1E154DD4007F9C94 /* Model */,
 				0CECD4671E154AFB007F9C94 /* Controller */,
@@ -125,6 +128,14 @@
 				0CECD4731E1554B8007F9C94 /* ArticleProtocal.swift */,
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		8843D5F71E15FAB40083999B /* Presentor */ = {
+			isa = PBXGroup;
+			children = (
+				8843D5F81E15FACE0083999B /* ArticlePresentor.swift */,
+			);
+			name = Presentor;
 			sourceTree = "<group>";
 		};
 		B7B86ACA1A0F3D99696BC490 /* Frameworks */ = {
@@ -266,6 +277,7 @@
 				0CECD46B1E154B2C007F9C94 /* TableViewCell.swift in Sources */,
 				0CECD4551E1547B5007F9C94 /* AppDelegate.swift in Sources */,
 				0CECD4691E154B19007F9C94 /* TableViewController.swift in Sources */,
+				8843D5F91E15FACE0083999B /* ArticlePresentor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

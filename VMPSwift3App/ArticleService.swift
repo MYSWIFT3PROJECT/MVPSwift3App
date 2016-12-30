@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+
 class ArticleService{
     //ArticlePrtocal delegate Object
     var delegate: ArticleProtocal?
@@ -27,7 +28,9 @@ class ArticleService{
             }
              //Mark add data to ArticleServiceProtocol's delegate
           self.delegate?.resposeDataFromGet(article: articles)
+         print(response.result.value)
         }
+        
     }
     
     
