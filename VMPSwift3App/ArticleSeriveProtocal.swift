@@ -7,8 +7,8 @@
 //
 
 import Foundation
-protocol  ArticleProtocal {
-    //ResponeData
+protocol  ArticleSeriveProtocal:class{
+    //ResponeData Article
     func resposeDataFromGet(article:[Article])
     
 }

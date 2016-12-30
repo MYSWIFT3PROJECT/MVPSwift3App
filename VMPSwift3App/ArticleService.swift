@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class ArticleService{
     //ArticlePrtocal delegate Object
-    var delegate: ArticleProtocal?
+    var delegate: ArticleSeriveProtocal?
     //get Data function
     func fectchData(page:Int, limit:Int){
         Alamofire.request("http://120.136.24.174:1301/v1/api/articles?page=\(page)(&limit=\(limit)",method:.get).responseJSON{

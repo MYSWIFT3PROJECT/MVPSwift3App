@@ -7,15 +7,23 @@
 //
 
 import Foundation
-class ArticlePresentor{
+class ArticlePresentor : ArticleSeriveProtocal{
     //Mark:set delegate for presentor protocal
-    var delegate: ArticleProtocal?
+    var delegate: ArticlePresentorProtocal?
+    
     //Mark:set service protocal
     var articleService:ArticleService?
+    
     init(){
-        //Mark: initalize Article Service
         articleService = ArticleService()
         articleService?.delegate = self
+    }
+    func getData(page:Int,limit:Int){
+        articleService?.fectchData(page: page, limit: limit)
+    }
+    
+    func resposeDataFromGet(article: [Article]) {
+        
     }
     
 }
